@@ -1,0 +1,3 @@
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir
