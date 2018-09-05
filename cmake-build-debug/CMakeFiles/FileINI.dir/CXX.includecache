@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h
+iostream
+-
+map
+-
+
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/main.cpp
+iostream
+-
+INIManager.h
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h
+

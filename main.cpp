@@ -1,6 +1,11 @@
 #include <iostream>
+#include "INIManager.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    INIManager im;
+    for(auto elem : im.readFile("config.ini"))
+    {
+        std::cout << elem.first << " " << elem.second << std::endl;
+    }
     return 0;
 }

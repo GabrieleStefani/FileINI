@@ -71,7 +71,7 @@ CMAKE_BINARY_DIR = /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programm
 CMakeFiles/FileINI.dir/all:
 	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/depend
 	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target FileINI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target FileINI"
 .PHONY : CMakeFiles/FileINI.dir/all
 
 # Include target in all.
@@ -81,7 +81,7 @@ all: CMakeFiles/FileINI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FileINI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FileINI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/FileINI.dir/rule

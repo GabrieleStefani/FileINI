@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.cpp">
+			<Option target="FileINI"/>
+		</Unit>
+		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h">
+			<Option target="FileINI"/>
+		</Unit>
 		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/main.cpp">
 			<Option target="FileINI"/>
 		</Unit>

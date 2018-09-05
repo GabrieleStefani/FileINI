@@ -3,4 +3,4 @@ project(FileINI)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(FileINI main.cpp)
+add_executable(FileINI main.cpp INIManager.cpp INIManager.h)

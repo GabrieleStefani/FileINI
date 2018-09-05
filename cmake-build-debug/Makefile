@@ -123,6 +123,33 @@ FileINI/fast:
 	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/build
 .PHONY : FileINI/fast
 
+INIManager.o: INIManager.cpp.o
+
+.PHONY : INIManager.o
+
+# target to build an object file
+INIManager.cpp.o:
+	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.o
+.PHONY : INIManager.cpp.o
+
+INIManager.i: INIManager.cpp.i
+
+.PHONY : INIManager.i
+
+# target to preprocess a source file
+INIManager.cpp.i:
+	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.i
+.PHONY : INIManager.cpp.i
+
+INIManager.s: INIManager.cpp.s
+
+.PHONY : INIManager.s
+
+# target to generate assembly for a file
+INIManager.cpp.s:
+	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.s
+.PHONY : INIManager.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FileINI"
+	@echo "... INIManager.o"
+	@echo "... INIManager.i"
+	@echo "... INIManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
