@@ -11,7 +11,7 @@
 class INIManager {
 public:
 
-    std::map<std::string, std::string> readFile(std::string fileName);
+    std::map<std::string, std::unique_ptr<std::map<std::string, std::string>*>> readFile(std::string fileName);
 private:
     std::string fileName;
 };

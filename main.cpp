@@ -3,9 +3,12 @@
 
 int main() {
     INIManager im;
-    for(auto elem : im.readFile("config.ini"))
+    for(auto &section : im.readFile("config.ini"))
     {
-        std::cout << elem.first << " " << elem.second << std::endl;
+        std::cout << "[" << section.first << "]" << std::endl;
+        for(auto elem : (**section.second)){
+            std::cout << elem.first << "=" << elem.second << std::endl;
+        }
     }
     return 0;
 }
