@@ -7,3 +7,5 @@ CMakeFiles/FileINI.dir/INIManager.cpp.o: ../INIManager.h
 CMakeFiles/FileINI.dir/main.cpp.o: ../INIManager.h
 CMakeFiles/FileINI.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/FileINI.dir/test/test.cpp.o: ../test/test.cpp
+

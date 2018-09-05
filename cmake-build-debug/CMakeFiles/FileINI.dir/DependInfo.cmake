@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/INIManager.cpp.o"
   "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/main.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/main.cpp.o"
+  "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/test.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/test/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

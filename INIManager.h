@@ -10,10 +10,14 @@
 
 class INIManager {
 public:
+    void readFile(std::string fileName);
+    void writeFile(std::string fileName);
 
-    std::map<std::string, std::unique_ptr<std::map<std::string, std::string>*>> readFile(std::string fileName);
+    const std::map<std::string, std::unique_ptr<std::map<std::string, std::string> *>> &getConfiguration() const;
+
 private:
-    std::string fileName;
+    std::map<std::string, std::unique_ptr<std::map<std::string, std::string>*>> configuration;
+    std::map<int, std::string> comments;
 };
 
 

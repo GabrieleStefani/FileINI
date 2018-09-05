@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/FileINI.dir/main.cpp.o"
   "CMakeFiles/FileINI.dir/INIManager.cpp.o"
+  "CMakeFiles/FileINI.dir/test/test.cpp.o"
   "FileINI.pdb"
   "FileINI"
 )
