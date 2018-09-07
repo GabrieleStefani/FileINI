@@ -4,5 +4,8 @@ project(FileINI)
 set(CMAKE_CXX_STANDARD 14)
 
 add_subdirectory(test)
+set(SOURCE_FILES INIManager.cpp INIManager.h)
 
-add_executable(FileINI main.cpp INIManager.cpp INIManager.h test/test.cpp)
+add_executable(FileINI main.cpp)
+add_library(core ${SOURCE_FILES})
+target_link_libraries(FileINI core)

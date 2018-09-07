@@ -62,6 +62,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/core.dir/DependInfo.cmake"
   "CMakeFiles/FileINI.dir/DependInfo.cmake"
   "test/CMakeFiles/test.dir/DependInfo.cmake"
   "test/lib/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"

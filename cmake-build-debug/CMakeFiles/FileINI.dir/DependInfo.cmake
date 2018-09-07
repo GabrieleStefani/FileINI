@@ -4,9 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/INIManager.cpp.o"
   "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/main.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/main.cpp.o"
-  "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/test.cpp" "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/FileINI.dir/test/test.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
@@ -16,6 +14,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles/core.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

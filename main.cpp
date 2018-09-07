@@ -4,13 +4,17 @@
 int main() {
     INIManager im;
     im.readFile("config.ini");
-    for(auto it = im.getConfiguration().begin(); it != im.getConfiguration().end(); it++)
+    for(auto &section : im.getConfiguration())
     {
-        std::cout << "[" << it->first << "]" << std::endl;
-        for(auto elem : (**(it->second))){
+        if(section.first != "") {
+            std::cout << "[" << section.first << "]" << std::endl;
+            if(im.getComments().find(section.first) != im.getComments().end())
+                std::cout << ";" + im.getComments().at(section.first) << std::endl;
+        }
+        for (auto elem : *section.second) {
             std::cout << elem.first << "=" << elem.second << std::endl;
         }
     }
-    im.writeFile("config2");
+    //im.writeFile( "config2");
     return 0;
 }

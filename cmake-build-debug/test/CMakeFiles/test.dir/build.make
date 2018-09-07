@@ -57,33 +57,49 @@ include test/CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include test/CMakeFiles/test.dir/flags.make
 
-test/CMakeFiles/test.dir/test.cpp.o: test/CMakeFiles/test.dir/flags.make
-test/CMakeFiles/test.dir/test.cpp.o: ../test/test.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/test.cpp.o"
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/test.cpp.o -c /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/test.cpp
+test/CMakeFiles/test.dir/runAllTests.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/runAllTests.cpp.o: ../test/runAllTests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/test.dir/runAllTests.cpp.o"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/runAllTests.cpp.o -c /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/runAllTests.cpp
 
-test/CMakeFiles/test.dir/test.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/test.cpp.i"
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/test.cpp > CMakeFiles/test.dir/test.cpp.i
+test/CMakeFiles/test.dir/runAllTests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/runAllTests.cpp.i"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/runAllTests.cpp > CMakeFiles/test.dir/runAllTests.cpp.i
 
-test/CMakeFiles/test.dir/test.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/test.cpp.s"
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/test.cpp -o CMakeFiles/test.dir/test.cpp.s
+test/CMakeFiles/test.dir/runAllTests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/runAllTests.cpp.s"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/runAllTests.cpp -o CMakeFiles/test.dir/runAllTests.cpp.s
+
+test/CMakeFiles/test.dir/INIManagerTest.cpp.o: test/CMakeFiles/test.dir/flags.make
+test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../test/INIManagerTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/test.dir/INIManagerTest.cpp.o"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test.dir/INIManagerTest.cpp.o -c /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/INIManagerTest.cpp
+
+test/CMakeFiles/test.dir/INIManagerTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/INIManagerTest.cpp.i"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/INIManagerTest.cpp > CMakeFiles/test.dir/INIManagerTest.cpp.i
+
+test/CMakeFiles/test.dir/INIManagerTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/INIManagerTest.cpp.s"
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/INIManagerTest.cpp -o CMakeFiles/test.dir/INIManagerTest.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/test.cpp.o"
+"CMakeFiles/test.dir/runAllTests.cpp.o" \
+"CMakeFiles/test.dir/INIManagerTest.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test/test: test/CMakeFiles/test.dir/test.cpp.o
+test/test: test/CMakeFiles/test.dir/runAllTests.cpp.o
+test/test: test/CMakeFiles/test.dir/INIManagerTest.cpp.o
 test/test: test/CMakeFiles/test.dir/build.make
 test/test: test/lib/googletest/libgtestd.a
 test/test: test/lib/googletest/libgtest_maind.a
+test/test: libcore.a
 test/test: test/lib/googletest/libgtestd.a
 test/test: test/CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable test"
 	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

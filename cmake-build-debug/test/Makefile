@@ -125,32 +125,59 @@ test/fast:
 	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-test.o: test.cpp.o
+INIManagerTest.o: INIManagerTest.cpp.o
 
-.PHONY : test.o
+.PHONY : INIManagerTest.o
 
 # target to build an object file
-test.cpp.o:
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test.cpp.o
-.PHONY : test.cpp.o
+INIManagerTest.cpp.o:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/INIManagerTest.cpp.o
+.PHONY : INIManagerTest.cpp.o
 
-test.i: test.cpp.i
+INIManagerTest.i: INIManagerTest.cpp.i
 
-.PHONY : test.i
+.PHONY : INIManagerTest.i
 
 # target to preprocess a source file
-test.cpp.i:
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test.cpp.i
-.PHONY : test.cpp.i
+INIManagerTest.cpp.i:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/INIManagerTest.cpp.i
+.PHONY : INIManagerTest.cpp.i
 
-test.s: test.cpp.s
+INIManagerTest.s: INIManagerTest.cpp.s
 
-.PHONY : test.s
+.PHONY : INIManagerTest.s
 
 # target to generate assembly for a file
-test.cpp.s:
-	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/test.cpp.s
-.PHONY : test.cpp.s
+INIManagerTest.cpp.s:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/INIManagerTest.cpp.s
+.PHONY : INIManagerTest.cpp.s
+
+runAllTests.o: runAllTests.cpp.o
+
+.PHONY : runAllTests.o
+
+# target to build an object file
+runAllTests.cpp.o:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/runAllTests.cpp.o
+.PHONY : runAllTests.cpp.o
+
+runAllTests.i: runAllTests.cpp.i
+
+.PHONY : runAllTests.i
+
+# target to preprocess a source file
+runAllTests.cpp.i:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/runAllTests.cpp.i
+.PHONY : runAllTests.cpp.i
+
+runAllTests.s: runAllTests.cpp.s
+
+.PHONY : runAllTests.s
+
+# target to generate assembly for a file
+runAllTests.cpp.s:
+	cd /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/cmake-build-debug && $(MAKE) -f test/CMakeFiles/test.dir/build.make test/CMakeFiles/test.dir/runAllTests.cpp.s
+.PHONY : runAllTests.cpp.s
 
 # Help Target
 help:
@@ -161,9 +188,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... test.o"
-	@echo "... test.i"
-	@echo "... test.s"
+	@echo "... INIManagerTest.o"
+	@echo "... INIManagerTest.i"
+	@echo "... INIManagerTest.s"
+	@echo "... runAllTests.o"
+	@echo "... runAllTests.i"
+	@echo "... runAllTests.s"
 .PHONY : help
 
 

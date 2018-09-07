@@ -6,19 +6,3 @@
 
 #IncludeRegexTransform: 
 
-/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.cpp
-INIManager.h
-/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h
-fstream
--
-sstream
--
-vector
--
-
-/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h
-iostream
--
-map
--
-

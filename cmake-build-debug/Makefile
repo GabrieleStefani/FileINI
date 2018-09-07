@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named core
+
+# Build rule for target.
+core: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 core
+.PHONY : core
+
+# fast build rule for target.
+core/fast:
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/build
+.PHONY : core/fast
+
+#=============================================================================
 # Target rules for targets named FileINI
 
 # Build rule for target.
@@ -168,7 +181,7 @@ INIManager.o: INIManager.cpp.o
 
 # target to build an object file
 INIManager.cpp.o:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.o
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/INIManager.cpp.o
 .PHONY : INIManager.cpp.o
 
 INIManager.i: INIManager.cpp.i
@@ -177,7 +190,7 @@ INIManager.i: INIManager.cpp.i
 
 # target to preprocess a source file
 INIManager.cpp.i:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.i
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/INIManager.cpp.i
 .PHONY : INIManager.cpp.i
 
 INIManager.s: INIManager.cpp.s
@@ -186,7 +199,7 @@ INIManager.s: INIManager.cpp.s
 
 # target to generate assembly for a file
 INIManager.cpp.s:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/INIManager.cpp.s
+	$(MAKE) -f CMakeFiles/core.dir/build.make CMakeFiles/core.dir/INIManager.cpp.s
 .PHONY : INIManager.cpp.s
 
 main.o: main.cpp.o
@@ -216,33 +229,6 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-test/test.o: test/test.cpp.o
-
-.PHONY : test/test.o
-
-# target to build an object file
-test/test.cpp.o:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/test/test.cpp.o
-.PHONY : test/test.cpp.o
-
-test/test.i: test/test.cpp.i
-
-.PHONY : test/test.i
-
-# target to preprocess a source file
-test/test.cpp.i:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/test/test.cpp.i
-.PHONY : test/test.cpp.i
-
-test/test.s: test/test.cpp.s
-
-.PHONY : test/test.s
-
-# target to generate assembly for a file
-test/test.cpp.s:
-	$(MAKE) -f CMakeFiles/FileINI.dir/build.make CMakeFiles/FileINI.dir/test/test.cpp.s
-.PHONY : test/test.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -251,6 +237,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... core"
 	@echo "... FileINI"
 	@echo "... test"
 	@echo "... gtest_main"
@@ -261,9 +248,6 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test/test.o"
-	@echo "... test/test.i"
-	@echo "... test/test.s"
 .PHONY : help
 
 
