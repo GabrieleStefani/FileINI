@@ -8,8 +8,11 @@
 #include <vector>
 
 void INIManager::readFile(std::string fileName) {
-    std::string currentSection = "";
 
+    configuration.clear();
+    comments.clear();
+
+    std::string currentSection = "";
     std::ifstream infile(fileName);
     std::string line;
     while(std::getline(infile, line)){

@@ -10,6 +10,7 @@
 
 class INIManager {
 public:
+
     void readFile(std::string fileName);
     void writeFile(std::string fileName);
 
@@ -19,7 +20,6 @@ public:
     std::string getCommentFromSection(std::string section);
 
     void addSection(std::string section);
-    void addSectionWithParams(std::string section, std::map<std::string, std::string>& params);
     void removeSection(std::string section);
     void changeSectionName(std::string oldName, std::string newName);
     std::map<std::string, std::string> getSection(std::string section);
