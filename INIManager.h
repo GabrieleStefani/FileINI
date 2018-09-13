@@ -7,6 +7,8 @@
 
 #include <iostream>
 #include <map>
+#include <list>
+#include "NotFoundException.h"
 
 class INIManager {
 public:
@@ -29,7 +31,7 @@ public:
     void changeParamInSection(std::string key, std::string newValue, std::string section);
     std::string getParamValueInSection(std::string key, std::string section);
 
-    std::string findParamSection(std::string key);
+    std::list<std::string> findParamSection(std::string key);
 
     const std::map<std::string, std::unique_ptr<std::map<std::string, std::string> >> &getConfiguration() const;
     const std::map<std::string, std::string> &getComments() const;

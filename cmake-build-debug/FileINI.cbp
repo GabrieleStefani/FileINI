@@ -266,6 +266,9 @@
 		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/INIManager.h">
 			<Option target="core"/>
 		</Unit>
+		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/NotFoundException.h">
+			<Option target="core"/>
+		</Unit>
 		<Unit filename="/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/main.cpp">
 			<Option target="FileINI"/>
 		</Unit>

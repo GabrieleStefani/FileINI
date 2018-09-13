@@ -3,4 +3,5 @@
 
 CMakeFiles/core.dir/INIManager.cpp.o: ../INIManager.cpp
 CMakeFiles/core.dir/INIManager.cpp.o: ../INIManager.h
+CMakeFiles/core.dir/INIManager.cpp.o: ../NotFoundException.h
 

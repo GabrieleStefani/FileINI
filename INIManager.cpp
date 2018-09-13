@@ -6,6 +6,7 @@
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <exception>
 
 void INIManager::readFile(std::string fileName) {
 
@@ -33,10 +34,8 @@ void INIManager::readFile(std::string fileName) {
                 if (currentSection == "")
                     configuration.insert(make_pair(currentSection, std::unique_ptr<std::map<std::string, std::string>>(new std::map<std::string, std::string>)));
                 configuration[currentSection]->insert(make_pair(wordList[0], wordList[1]));
-            }else {
-                std::cerr << fileName + " doesn't respect the INI format";
-                break;
-            }
+            }else
+                throw std::runtime_error("This file doesn't respect the INI format");
         }
     }
     infile.close();
@@ -77,6 +76,8 @@ void INIManager::addSection(std::string section) {
 void INIManager::removeSection(std::string section) {
     if(configuration.find(section) != configuration.end())
         configuration.erase(section);
+    else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::changeSectionName(std::string oldName, std::string newName) {
@@ -86,60 +87,103 @@ void INIManager::changeSectionName(std::string oldName, std::string newName) {
         configuration.insert(make_pair(newName, std::unique_ptr<std::map<std::string, std::string>>(&params)));
         configuration.erase(oldName);
     }
+    else
+        throw NotFoundException("Section not found");
 
 }
 
 std::map<std::string, std::string> INIManager::getSection(std::string section) {
-    return (*configuration[section]);
+    if(configuration.find(section) != configuration.end())
+        return (*configuration[section]);
+    else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::addParamToSection(std::string key, std::string value, std::string section) {
     if(configuration.find(section) != configuration.end())
-        configuration[section]->insert(make_pair(key, value));
+        (*configuration[section])[key] = value;
+    else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::removeParamFromSection(std::string key, std::string section) {
-    if(configuration.find(section) != configuration.end() && configuration[section]->find(key) != configuration[section]->end())
-        configuration[section]->erase(key);
+    if(configuration.find(section) != configuration.end())
+        if(configuration[section]->find(key) != configuration[section]->end())
+            configuration[section]->erase(key);
+        else
+            throw NotFoundException("Param not found");
+    else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::changeParamInSection(std::string key, std::string newValue, std::string section) {
-    if(configuration.find(section) != configuration.end() && configuration[section]->find(key) != configuration[section]->end())
-        (*configuration[section])[key] = newValue;
+    if(configuration.find(section) != configuration.end())
+        if(configuration[section]->find(key) != configuration[section]->end())
+            (*configuration[section])[key] = newValue;
+        else
+            throw NotFoundException("Param not found");
+    else
+        throw NotFoundException("Section not found");
+
 }
 
 std::string INIManager::getParamValueInSection(std::string key, std::string section) {
-    if(configuration.find(section) != configuration.end() && configuration[section]->find(key) != configuration[section]->end())
-        return (*configuration[section])[key];
-    return "Param not found";
+    if(configuration.find(section) != configuration.end())
+        if(configuration[section]->find(key) != configuration[section]->end())
+            return (*configuration[section])[key];
+        else
+            throw NotFoundException("Param not found");
+    else
+        throw NotFoundException("Section not found");
 }
 
-std::string INIManager::findParamSection(std::string key) {
+std::list<std::string> INIManager::findParamSection(std::string key) {
+    std::list<std::string> sections;
     for(auto &section : configuration){
         if(section.second->find(key) != section.second->end())
-            return section.first;
+            sections.push_back(section.first);
     }
-    return "Param not found";
+    if(sections.size() != 0)
+        return sections;
+    else
+        throw NotFoundException("Param not found");
 }
 
 void INIManager::addCommentToSection(std::string comment, std::string section) {
-    if(comments.find(section) == comments.end())
-        comments.insert(make_pair(section, comment));
+    if(configuration.find(section) != configuration.end()) {
+        if (comments.find(section) == comments.end())
+            comments[section] = comment;
+    } else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::removeCommentFromSection(std::string section) {
-    if(comments.find(section) != comments.end())
-        comments.erase(section);
+    if(configuration.find(section) != configuration.end()) {
+        if (comments.find(section) != comments.end())
+            comments.erase(section);
+        else
+            throw NotFoundException("Comment not found");
+    } else
+        throw NotFoundException("Section not found");
 }
 
 void INIManager::changeCommentInSection(std::string newComment, std::string section) {
-    if(comments.find(section) != comments.end())
-        comments[section] = newComment;
+    if(configuration.find(section) != configuration.end()) {
+        if (comments.find(section) != comments.end())
+            comments[section] = newComment;
+        else
+            throw NotFoundException("Comment not found");
+    } else
+        throw NotFoundException("Section not found");
 }
 
 std::string INIManager::getCommentFromSection(std::string section) {
-    if(comments.find(section) != comments.end())
-        return comments[section];
-    return "Comment not found";
+    if(configuration.find(section) != configuration.end()) {
+        if(comments.find(section) != comments.end())
+            return comments[section];
+        else
+            throw NotFoundException("Comment not found");
+    } else
+        throw NotFoundException("Section not found");
 }
 

@@ -24,6 +24,7 @@ test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../test/lib/googletest/include/gt
 test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../test/lib/googletest/include/gtest/internal/gtest-tuple.h
 test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../test/lib/googletest/include/gtest/internal/gtest-type-util.h
 test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../INIManager.h
+test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../NotFoundException.h
 test/CMakeFiles/test.dir/INIManagerTest.cpp.o: ../test/INIManagerTest.cpp
 
 test/CMakeFiles/test.dir/runAllTests.cpp.o: ../test/lib/googletest/include/gtest/gtest-death-test.h

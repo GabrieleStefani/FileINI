@@ -291,6 +291,16 @@ iostream
 -
 map
 -
+list
+-
+NotFoundException.h
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/NotFoundException.h
+
+/Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/NotFoundException.h
+exception
+-
+string
+-
 
 /Users/laurettaagliata/Documents/GabrieleStefani/Uni/Programmazione/FileINI/test/INIManagerTest.cpp
 gtest/gtest.h
